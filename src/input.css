@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ico-plus {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.ico-plus::before,
+.ico-plus::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.ico-plus::after {
+    transform: rotate(90deg);
+}
+
+[aria-expanded="true"] .ico-plus::after {
+    transform: rotate(0deg);
+}
+
+.relative {
+    transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+}
