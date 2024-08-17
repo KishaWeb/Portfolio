@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1536px',
+    },
 
     extend: {
 
@@ -30,22 +38,14 @@ module.exports = {
         '6xl': '48px',
         '7xl': '90px',
         '8xl': '100px',
-        '9xl': '140px',
-        '10xl': '14rem',
+        '9xl': '150px',
+        '10xl': '13rem',
         '11xl': '17rem',
       },
 
       fontFamily: {
         'cabinet': ['Cabinet Grotesk', 'sans-serif'],
         'inter': ['Inter', 'sans-serif']
-      },
-
-      screens: {
-        phone: '480px',
-        tablet: '768px',
-        laptop: '1024px',
-        desktop: '1280px',
-        widescreen: '1536px',
       },
     },
   },

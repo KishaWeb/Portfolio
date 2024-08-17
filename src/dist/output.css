@@ -564,12 +564,6 @@ video {
   }
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -626,8 +620,8 @@ video {
   margin-top: 6rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-8 {
@@ -642,6 +636,10 @@ video {
   height: 4rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -650,16 +648,16 @@ video {
   height: 1.5rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
 
 .w-16 {
   width: 4rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-52 {
@@ -676,10 +674,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .flex-grow {
@@ -726,6 +720,10 @@ video {
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-24 {
@@ -880,7 +878,7 @@ video {
 }
 
 .text-10xl {
-  font-size: 14rem;
+  font-size: 13rem;
 }
 
 .text-11xl {
@@ -911,7 +909,7 @@ video {
 }
 
 .text-9xl {
-  font-size: 140px;
+  font-size: 150px;
 }
 
 .font-black {
@@ -1008,20 +1006,21 @@ video {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
 }
 
-@media (min-width: 480px) {
-  .phone\:flex-col {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 768px) {
-  .tablet\:flex-row {
-    flex-direction: row;
+  .md\:text-10xl {
+    font-size: 13rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 48px;
+  }
+
+  .md\:text-9xl {
+    font-size: 150px;
   }
 }
